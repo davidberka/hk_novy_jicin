@@ -94,3 +94,33 @@ const counter = function () {
 }
 
 counter();
+
+const fotogaleriePagesHandler = function (btnClass, containerId) {
+  let page = 1;
+
+  const btns = document.querySelectorAll(`.${btnClass}`);
+
+  btns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const type = btn.className.split(' ')[1];
+
+      if (type === 'next') {
+        page += 1;
+      } else {
+        page -= 1;
+      }
+
+      document.querySelector('.row_active').classList.remove('row_active');
+      const currentPage = document.querySelector(`#${containerId}${page}`);
+      currentPage.classList.add('row_active');
+    })
+  })
+}
+
+fotogaleriePagesHandler('fotogalerie-page_button', 'fotogalerie-row_page');
+fotogaleriePagesHandler('novinky-page_button', 'novinky-row_page');
+
+lightbox.option({
+      'resizeDuration': 400,
+      'wrapAround': true,
+    })

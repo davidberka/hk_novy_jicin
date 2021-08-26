@@ -1,0 +1,200 @@
+.fotogalerie_page, .novinky_page {
+    .main__content {
+        margin-top: 50px;
+    }
+}
+
+.fotogalerie_page_header, .novinky_page_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+
+    h1 {
+        color: #002469;
+    }
+
+    .fotogalerie_page_form, .novinky_page_form {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .form .jq-selectbox {
+            margin-bottom: 0;
+            min-width: 100px;
+        }
+        .form.novinky .jq-selectbox {
+            min-width: 200px;
+        }
+
+        .jq-select-multiple li, .jq-selectbox li {
+            margin-left: 0;
+        }
+
+        input[type="text"] {
+            border: 1px solid rgba(0,0,0,0.1);
+            border-radius: 4px;
+            height: 40px;
+            padding: 0 0.5rem;
+
+            &:focus {
+                outline: none;
+            }
+        }
+        button {
+            border: none;
+            border-radius: 4px;
+            height: 41px;
+            cursor: pointer;
+            background: $red;
+            color: white;
+
+            &:hover {
+                background: #d81a00;
+            }
+        }
+    }
+}
+
+.fotogalerie_row_container, .novinky_row_container {
+    display: none;
+
+    &.row_active {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3.4rem;
+    }
+}
+
+.fotogalerie_row, .novinky_row {
+    display: flex;
+    width: 100%;
+
+    &:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+
+    .fotogalerie_row-img_container, .novinky_row-img_container {
+        flex: 1.1;
+        height: 200px;
+        margin-right: 2rem;
+        overflow: hidden;
+        display: flex;
+
+        a:not(:first-child) {
+            display: none;
+        }
+
+        a {
+            height: 100%;
+            width: 100%;
+        }
+        
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .fotogalerie_row-content, .novinky_row-content {
+        flex: 1;
+
+        & > div {
+            display: flex;
+            margin-bottom: 1rem;
+
+            span {
+                padding: 0.5rem;
+                font-size: 0.8rem;
+                color: white;
+            }
+
+            span:first-child {
+                background: $red;
+            }
+
+            span:last-child {
+                background: $blue;
+            }
+        }
+
+        a {
+            color: $blue;
+            h2 {
+                width: 100%;
+            }
+        }
+    }
+    .novinky_row-content {
+        a {
+            margin-bottom: 0.3rem;
+        }
+        p {
+            font-size: 1rem;
+        }
+    }
+}
+
+.fotogalerie-page_button_container, .novinky-page_button_container {
+    display: flex;
+}
+
+.fotogalerie-page_button, .novinky-page_button {
+    border: none;
+    padding: 0.75rem 1.5rem;
+    background: $red;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: fit-content;
+    border-radius: 4px;
+
+    &:hover {
+        background: #d81a00;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; 
+    }
+
+    &.prev {
+        margin-right: 1.5rem;
+    }
+
+    &.prev span {
+        margin-right: 0.5rem;
+    }
+
+    &.next span {
+        margin-left: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 630px) {
+   .fotogalerie_page_header, .novinky_page_header {
+       flex-direction: column;
+       align-items: flex-start;
+
+       h1 {
+           margin-bottom: 1rem;
+       }
+   } 
+
+   .fotogalerie_row_container, .novinky_row_container {
+       width: 90%;
+       margin: 0 auto;
+       margin-bottom: 3rem;
+   }
+
+   .fotogalerie_row, .novinky_row {
+       flex-direction: column;
+
+       .fotogalerie_row-img_container, .novinky_row-img_container {
+           margin-right: 0;
+           margin-bottom: 1rem;
+
+           img {
+             height: 200px;
+           }
+       }
+   }
+}
+
