@@ -204,6 +204,7 @@
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 
+
     li {
        text-transform: uppercase;
        font-family: 'Red Hat Display', sans-serif;
@@ -396,8 +397,10 @@
    .dropdown-menu{
       max-width: 320px;
       width: 100%;
-      &__list a{
-         padding: 7px 0;
+      &__list {
+         a {
+            padding: 7px 0;
+         }
       }
    }
   }
@@ -444,4 +447,14 @@
 .dropdown-menu__list:hover > .second-lvl-dropdown-menu {
    display: block;
    z-index: 1000;
+}
+
+.dropdown-menu__list.active .second-lvl-dropdown-menu {
+   width: 100%;
+   display: block;
+   left: 0;
+   top: 0;
+   background: $blue;
+   padding: 1rem 0;
+   margin-top: 2rem;
 }

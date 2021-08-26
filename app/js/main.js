@@ -52,6 +52,9 @@ $(function(){
  $('.navigation__item').on('click', function () {
    $(this).closest('.navigation__list').toggleClass('active');
  });
+ $('.dropdown-menu__list').on('click', function () {
+   $(this).toggleClass('active')
+ });
 });
 //// scroll
 window.addEventListener('scroll', function () {
