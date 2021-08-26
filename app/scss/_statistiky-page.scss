@@ -1,0 +1,69 @@
+.statistiky_page {
+    h1 {
+        margin-bottom: 32px;
+        color: #002469;
+    }
+
+    .main__content {
+        margin-top: 50px;
+    }
+
+    .infoblock__tabulka-content {
+        display: block;
+        
+        tr th:last-of-type, tr td:last-of-type {
+            padding-left: 0;
+        }
+        
+        .statistiky-page__table {
+            margin-bottom: 32px; 
+            overflow-x: auto;
+        }
+
+        h3 {
+            color: #002469;
+            padding-left: 17px;
+            position: relative;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+    
+            &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 6px;
+                width: 1px;
+                height: 11px;
+                background-color: #e53a24;
+            }
+        }
+    }
+
+}
+
+.vysvetlivky_container {
+    margin-bottom: 50px;
+    padding-top: 32px;
+
+    h3 {
+      padding-left: 0 !important;
+
+      &::before {
+          display: none;
+      }  
+    }
+}
+
+.vysvetlivky_category_container {
+    margin-bottom: 1rem;
+
+    h4 {
+        color: #002469;
+        margin-bottom: 0.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+        color: black;
+    }
+}

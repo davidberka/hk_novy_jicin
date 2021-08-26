@@ -1,0 +1,228 @@
+///statistiky
+.main.statistiky {
+   .main__content {
+     margin-top: 41px;
+   }
+   .form {
+     display: flex;
+     padding-bottom: 10px;
+   }
+   .subtitle {
+     margin-right: 20px;
+   }
+ }
+ .statistiky__menu {
+   margin-bottom: 20px;
+   ul {
+     display: flex;
+     margin-left: -5px;
+     flex-wrap: wrap;
+   }
+   li {
+     margin: 0 6px 6px;
+     .active {
+       background-color: $red;
+       color: #fff;
+       &:hover {
+         background-color: $red;
+         color: #fff;
+       }
+     }
+     a,
+     span {
+       padding: 0 10px;
+       height: 33px;
+       display: flex;
+       border-radius: 4px;
+       justify-content: center;
+       align-items: center;
+       color: black;
+       transition: all 0.6s;
+       box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
+       &:hover {
+         background-color: $blue;
+         color: #fff;
+       }
+     }
+   }
+ }
+ 
+ .statistiky__tabs {
+   margin-left: -6px;
+   padding-bottom: 20px;
+   margin-bottom: 20px;
+   border-bottom: 1px solid #dde1e6;
+   display: flex;
+   .statistiky__tab {
+     margin: 0 6px;
+     a {
+       font-size: 18px;
+       color: #878d96;
+       font-family: 'Barlow', sans-serif;
+       font-weight: 400;
+       margin-left: 8px;
+       text-decoration: underline;
+       line-height: 28px;
+     }
+   }
+   .statistiky__tab.active {
+     a {
+       text-decoration: none;
+       font-weight: 600;
+     }
+   }
+ }
+ .statistiky__content {
+   display: none;
+   .soupiska-page{
+    h3{
+      color: #002469;
+      padding-left: 17px;
+      position: relative;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+      &::before{
+         content: '';
+         position: absolute;
+         left: 0;
+         top: 6px;
+         width: 1px;
+         height: 11px;
+         background-color: #e53a24;
+      }
+   }
+   }
+ }
+ .statistiky__content.tab-active {
+   display: block;
+ }
+ 
+
+ .soupiska-table {
+   table {
+     border-collapse: collapse;
+     width: 100%;
+     text-align: left;
+     tr th:first-child {
+       padding: 8px 0 8px 16px;
+     }
+     tr th,
+     tr th a {
+       font-family: 'Barlow', sans-serif;
+       background: #eceff1;
+       font-size: 14px;
+       line-height: 1.57;
+       font-weight: 600;
+       text-align: center;
+       color: #05090c;
+       padding: 0;
+       border-bottom: 1px solid #eceff1;
+     }
+     tr td {
+       border-bottom: 1px solid #eceff1;
+       text-align: center;
+       font-size: 14px;
+       padding: 12px 4px;
+       font-weight: 400;
+       font-family: 'Barlow', sans-serif;
+     }
+     tr td:first-child {
+       padding: 8px 0 8px 16px;
+       text-align: left;
+       width: 70px;
+     }
+     tr th:first-child {
+       padding: 8px 0 8px 16px;
+       text-align: left;
+       width: 70px;
+     }
+     tr td.name,
+     tr th.name {
+       text-align: left;
+     }
+   }
+ }
+ .rozcestnik{
+   .main__content{
+     margin-top: 50px;
+     h1{
+       margin-bottom: 32px;
+       color: $blue;
+     }
+   }
+   .statistiky__content{
+     h1{
+       margin-bottom: 0;
+     }
+   }
+   .statistiky__tabs{
+     flex-wrap: wrap;
+   }
+   .statistiky__tab{
+     border: none;
+     padding: 0;
+     &.active{
+       background-color: transparent;
+       a{
+        color: $red;
+       }
+     }
+   }
+ }
+ .real-tabl__inner{
+   table{
+    tr th:first-child, tr th:nth-of-type(2), tr td:first-child, tr td:nth-of-type(2){
+      text-align: left;
+    }
+    tr th:first-child{
+      width: auto;
+    }
+    td a{
+      color: #000;
+    }
+   }
+ }
+ .rozcestnik__clanky{
+    grid-gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+ }
+ @media(max-width:1240px){
+   .rozcestnik{
+     .main__content{
+       max-width: 800px;
+       margin: 50px auto 0;
+     }
+   }
+ }
+ @media(max-width:680px){
+   .rozcestnik__clanky{
+     grid-template-columns: 1fr;
+     .clanek{
+       max-width: 100%;
+     }
+   }
+  .rozcestnik{
+    .main__inner{
+      display: block;
+    }
+  }
+
+ }
+ @media(max-width:520px){
+  .real-tabl__inner{
+    overflow-x: auto;
+    table{
+      width: 500px;
+      max-width: initial;
+    }
+  }
+ }
+ @media(max-width:410px){
+   .rozcestnik{
+     .statistiky__tabs{
+       padding-left: 0;
+     }
+   }
+ }

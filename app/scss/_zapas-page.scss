@@ -1,0 +1,111 @@
+.zapas-page{
+  
+   .aside {
+     
+   }
+   .social-content{
+      margin-top: 34px;
+   }
+   .game{
+      background-color: $blue;
+      display: flex;
+      justify-content: center;
+      flex: 100%;
+      padding-right: 0;
+     padding-top: 22px;
+      width: 100%;
+      max-width: 100%;
+      align-items: center;
+      padding-bottom: 7px;
+      &__info{
+         padding: 0 32px;
+         h3{
+            padding-left: 17px;
+            position: relative;
+            margin-bottom: 16px;
+            color: $blue;
+            text-transform: uppercase;
+            &::before{
+               content: '';
+               position: absolute;
+               width: 1px;
+               height: 11px;
+               left: 0px;
+               background-color: $red;
+               top: 7px;
+            }
+         }
+      }
+      &__info p{
+         margin-bottom: 27px;
+        
+      }
+      &__info-box{
+         margin-bottom: 32px;
+        p{
+         padding: 16px 0;
+         border-bottom: 1px solid $blue;
+         margin-bottom: 0;
+        }
+      }
+      &::after,
+      &::before{
+         display: none;
+      }
+      p{
+         margin-bottom: 16px;
+      }
+      &__col{
+         padding: 0 80px;
+      }
+   }
+   .game__logos img{
+      max-width: 100px;
+      height: 100px;
+      display: block;
+   }
+   .clanek-page__infobox{
+      border-bottom: none;
+      padding: 0 32px;
+   }
+}
+
+@media(max-width:740px){
+   .zapas-page .game__col{
+      padding: 0 50px;
+   }
+   .zapas-page .game__logos img{
+      width: 80px;
+      height: 80px;
+   }
+}
+@media(max-width:640px){
+   .zapas-page .game{
+     flex-wrap: wrap;
+     h1{
+        margin-bottom: 0;
+     }
+   }
+   .zapas-page .game__logos:last-of-type{
+      order: 2;
+   }
+   .zapas-page .game__col{
+      order: 3;
+      width: 100%;
+   }
+   .zapas-page .game__logos img{
+      width: 60px;
+      height: 60px;
+   }
+   .zapas-page .game__logos{
+    margin-left: 10px;
+    margin-right: 10px;
+   }
+}
+
+@media(max-width:480px){
+   .zapas-page .game__info,
+   .zapas-page .clanek-page__infobox{
+      padding: 0 10px;
+   }
+}
