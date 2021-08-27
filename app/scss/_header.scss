@@ -364,7 +364,22 @@
        top: 55px;
        padding-bottom: 25px;
     }
-    .dropdown-menu__list{
+    .dropdown-menu__list.active .second-lvl-dropdown-menu {
+       display: block;
+       left: 0;
+       top: 0;
+       position: relative;
+       background: $red;
+       padding: 1rem;
+       width: 100%;
+
+       li a {
+          border-bottom: 2px solid $blue;
+          text-align: center;
+          width: max-content;
+       }
+    }
+      .dropdown-menu__list{
        padding-left: 0;
        &::before{
           display: none;
@@ -449,12 +464,3 @@
    z-index: 1000;
 }
 
-.dropdown-menu__list.active .second-lvl-dropdown-menu {
-   width: 100%;
-   display: block;
-   left: 0;
-   top: 0;
-   background: $blue;
-   padding: 1rem 0;
-   margin-top: 2rem;
-}

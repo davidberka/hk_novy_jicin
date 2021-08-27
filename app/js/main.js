@@ -50,10 +50,13 @@ $(function(){
    $('.navigation__menu').slideToggle();
  });
  $('.navigation__item').on('click', function () {
+   if (!$(this).closest('.navigation__list').hasClass('active')) {
+     $('.navigation__list.active').removeClass('active');
+   }
    $(this).closest('.navigation__list').toggleClass('active');
  });
  $('.dropdown-menu__list').on('click', function () {
-   $(this).toggleClass('active')
+   $(this).toggleClass('active');
  });
 });
 //// scroll
