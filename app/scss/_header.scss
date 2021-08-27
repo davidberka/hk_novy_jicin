@@ -214,7 +214,8 @@
        cursor: pointer;
        width: 100%;
        color: #fff;
-       padding: 7px .5rem;
+       border-top-right-radius: 5px;
+       border-bottom-right-radius: 5px;
        
        &:hover {
           background: $blue;
@@ -236,6 +237,7 @@
    color: #fff;
    padding: 7px .5rem;
  }
+ 
 
  /// burger
 .navbar__menu {
