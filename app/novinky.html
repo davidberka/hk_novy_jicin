@@ -213,29 +213,20 @@
              <div class="novinky_page_header">
                  <h1>Novinky</h1> 
                  <div class="novinky_page_form">
-                     <form class="form">
-                        <select class="mesic" name="mesic" id="mesic">
-                            <option>Leden</option>
-                            <option>Unor</option>
-                            <option>Brezen</option>
-                            <option>Duben</option>
-                            <option>Kveten</option>
+                      <form method="get" action="/archiv.asp" class="form">
+                        <select class="rok" name="rok" id="rok">
+                            <option value='0'>Rok</option><option>2021</option><option>2020</option><option>2019</option><option>2018</option><option>2017</option><option>2016</option><option>2015</option><option>2014</option>
                         </select>
-                    </form>
-                     <form class="form novinky">
                         <select class="typ" name="typ" id="typ">
+                            <option value='0'>Kategorie članků</option><option value=6>Dorost</option><option value=5>B-tým</option><option value=11>Rozhovory</option><option value=2>Mládež</option><option value=8>Zápasy</option><option value=20>Zápasy - mládež</option><option value=23>Rozhovory - mládež</option><option value=10>Ohlasy po zápase</option><option value=1>A-tým</option><option value=9>Preview k zápasu</option><option value=3>Tiskové zprávy</option><option value=4>Historie</option>
                             <option>A-tym</option>
-                            <option>Mladez</option>
-                            <option>B-tym</option>
-                            <option>Fanousci</option>
-                            <option>Reprezentace</option>
                         </select>
-                    </form>
-                    <input type="text">
-                    <button>Hledat</button>
+                        <input type="text" name="query" value="">
+                        <input type="submit" value="Hledat">
+                     </form>
                  </div>
              </div>
-             <div data-role="novinky_row_page" id="novinky-row_page1" class="novinky_row_container row_active">
+             <div data-role="novinky_row_page" class="novinky_row_container">
                <div class="novinky_row">
                      <div class="novinky_row-img_container">
                          <a href="images/content/1.jpeg" data-lightbox="fotogalerie-1">
@@ -392,146 +383,11 @@
                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque sunt voluptatum, pariatur nostrum tempora modi. Qui consequatur voluptatum.</p>
                      </div>
                  </div>
-                 <div class="novinky-page_button_container">
-                     <button class="novinky-page_button next">Starší<span>&#8594;</span></button>
-                 </div>
-             </div>
-             <div data-role="novinky_row_page" id="novinky-row_page2" class="novinky_row_container">
-                 <div class="novinky_row">
-                     <div class="novinky_row-img_container">
-                         <a href="images/content/1.jpeg" data-lightbox="fotogalerie-1">
-                             <img src="images/content/1.jpeg" alt="" loading="lazy">
-                         </a>
-                         <a href="images/content/2.jpeg" data-lightbox="fotogalerie-1">
-                             <img src="images/content/2.jpeg" alt="" loading="lazy">
-                         </a>
-                         <a href="images/content/1.jpeg" data-lightbox="fotogalerie-1">
-                             <img src="images/content/1.jpeg" alt="" loading="lazy">
-                         </a>
-                         <a href="images/content/2.jpeg" data-lightbox="fotogalerie-1">
-                             <img src="images/content/2.jpeg" alt="" loading="lazy">
-                         </a>
-                     </div>
-                     <div class="novinky_row-content">
-                         <div>
-                             <span>pondělí</span>
-                             <span>12.6.2021</span>
-                         </div>
-                         <h2>
-                             <a href="#">Lorem Ipsum</a>
-                         </h2>
-                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque sunt voluptatum, pariatur nostrum tempora modi. Qui consequatur voluptatum.</p>
-                     </div>
-                 </div>
-                 <div class="novinky_row">
-                     <div class="novinky_row-img_container">
-                         <a href="images/content/1.jpeg" data-lightbox="fotogalerie-1">
-                             <img src="images/content/1.jpeg" alt="" loading="lazy">
-                         </a>
-                         <a href="images/content/2.jpeg" data-lightbox="fotogalerie-1">
-                             <img src="images/content/2.jpeg" alt="" loading="lazy">
-                         </a>
-                         <a href="images/content/1.jpeg" data-lightbox="fotogalerie-1">
-                             <img src="images/content/1.jpeg" alt="" loading="lazy">
-                         </a>
-                         <a href="images/content/2.jpeg" data-lightbox="fotogalerie-1">
-                             <img src="images/content/2.jpeg" alt="" loading="lazy">
-                         </a>
-                     </div>
-                     <div class="novinky_row-content">
-                         <div>
-                             <span>pondělí</span>
-                             <span>12.6.2021</span>
-                         </div>
-                         <h2>
-                             <a href="#">Lorem Ipsum</a>
-                         </h2>
-                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque sunt voluptatum, pariatur nostrum tempora modi. Qui consequatur voluptatum.</p>
-                     </div>
-                 </div>
-                 <div class="novinky_row">
-                     <div class="novinky_row-img_container">
-                         <a href="images/content/1.jpeg" data-lightbox="fotogalerie-1">
-                             <img src="images/content/1.jpeg" alt="" loading="lazy">
-                         </a>
-                         <a href="images/content/2.jpeg" data-lightbox="fotogalerie-1">
-                             <img src="images/content/2.jpeg" alt="" loading="lazy">
-                         </a>
-                         <a href="images/content/1.jpeg" data-lightbox="fotogalerie-1">
-                             <img src="images/content/1.jpeg" alt="" loading="lazy">
-                         </a>
-                         <a href="images/content/2.jpeg" data-lightbox="fotogalerie-1">
-                             <img src="images/content/2.jpeg" alt="" loading="lazy">
-                         </a>
-                     </div>
-                     <div class="novinky_row-content">
-                         <div>
-                             <span>pondělí</span>
-                             <span>12.6.2021</span>
-                         </div>
-                         <h2>
-                             <a href="#">Lorem Ipsum</a>
-                         </h2>
-                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque sunt voluptatum, pariatur nostrum tempora modi. Qui consequatur voluptatum.</p>
-                     </div>
-                 </div>
-                 <div class="novinky_row">
-                     <div class="novinky_row-img_container">
-                         <a href="images/content/1.jpeg" data-lightbox="fotogalerie-1">
-                             <img src="images/content/1.jpeg" alt="" loading="lazy">
-                         </a>
-                         <a href="images/content/2.jpeg" data-lightbox="fotogalerie-1">
-                             <img src="images/content/2.jpeg" alt="" loading="lazy">
-                         </a>
-                         <a href="images/content/1.jpeg" data-lightbox="fotogalerie-1">
-                             <img src="images/content/1.jpeg" alt="" loading="lazy">
-                         </a>
-                         <a href="images/content/2.jpeg" data-lightbox="fotogalerie-1">
-                             <img src="images/content/2.jpeg" alt="" loading="lazy">
-                         </a>
-                     </div>
-                     <div class="novinky_row-content">
-                         <div>
-                             <span>pondělí</span>
-                             <span>12.6.2021</span>
-                         </div>
-                         <h2>
-                             <a href="#">Lorem Ipsum</a>
-                         </h2>
-                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque sunt voluptatum, pariatur nostrum tempora modi. Qui consequatur voluptatum.</p>
-                     </div>
-                 </div>
-                 <div class="novinky_row">
-                     <div class="novinky_row-img_container">
-                         <a href="images/content/1.jpeg" data-lightbox="fotogalerie-1">
-                             <img src="images/content/1.jpeg" alt="" loading="lazy">
-                         </a>
-                         <a href="images/content/2.jpeg" data-lightbox="fotogalerie-1">
-                             <img src="images/content/2.jpeg" alt="" loading="lazy">
-                         </a>
-                         <a href="images/content/1.jpeg" data-lightbox="fotogalerie-1">
-                             <img src="images/content/1.jpeg" alt="" loading="lazy">
-                         </a>
-                         <a href="images/content/2.jpeg" data-lightbox="fotogalerie-1">
-                             <img src="images/content/2.jpeg" alt="" loading="lazy">
-                         </a>
-                     </div>
-                     <div class="novinky_row-content">
-                         <div>
-                             <span>pondělí</span>
-                             <span>12.6.2021</span>
-                         </div>
-                         <h2>
-                             <a href="#">Lorem Ipsum</a>
-                         </h2>
-                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque sunt voluptatum, pariatur nostrum tempora modi. Qui consequatur voluptatum.</p>
-                     </div>
-                 </div>
-                 <div class="novinky-page_button_container">
-                     <button class="novinky-page_button prev"><span>&#8592;</span>Novější</button>
-                     <button class="novinky-page_button next">Starší<span>&#8594;</span></button>
-                 </div>
-             </div>
+                </div>
+                <div class="novinky-page_button_container">
+                     <a href="#" class="fotogalerie-page_button prev"><span>&#8592;</span>Novější</a>
+                     <a href="#" class="fotogalerie-page_button next">Starší<span>&#8594;</span></a>
+                </div>
          </div>
          <aside class="aside">
             <div class="aside__tabbox">

@@ -213,17 +213,13 @@
              <div class="fotogalerie_page_header">
                  <h1>Fotogalerie</h1> 
                  <div class="fotogalerie_page_form">
-                     <form class="form">
-                        <select class="mesic" name="mesic" id="mesic">
-                            <option>Leden</option>
-                            <option>Unor</option>
-                            <option>Brezen</option>
-                            <option>Duben</option>
-                            <option>Kveten</option>
+                    <form method="get" action="/archiv.asp" class="form">
+                        <select class="rok" name="rok" id="rok">
+                            <option value='0'>Rok</option><option>2021</option><option>2020</option><option>2019</option><option>2018</option><option>2017</option><option>2016</option><option>2015</option><option>2014</option>
                         </select>
-                    </form>
-                    <input type="text">
-                    <button>Hledat</button>
+                        <input type="text" name="query" value="">
+                        <input type="submit" value="Hledat">
+                     </form>
                  </div>
              </div>
              <div data-role="fotogalerie_row_page" id="fotogalerie-row_page1" class="fotogalerie_row_container row_active">
@@ -378,139 +374,10 @@
                          </h2>
                      </div>
                  </div>
-                 <div class="fotogalerie-page_button_container">
-                     <button class="fotogalerie-page_button next">Starší<span>&#8594;</span></button>
-                 </div>
-             </div>
-             <div data-role="fotogalerie_row_page" id="fotogalerie-row_page2" class="fotogalerie_row_container">
-                 <div class="fotogalerie_row">
-                     <div class="fotogalerie_row-img_container">
-                         <a href="images/content/1.jpeg" data-lightbox="fotogalerie-1">
-                             <img src="images/content/1.jpeg" alt="" loading="lazy">
-                         </a>
-                         <a href="images/content/2.jpeg" data-lightbox="fotogalerie-1">
-                             <img src="images/content/2.jpeg" alt="" loading="lazy">
-                         </a>
-                         <a href="images/content/1.jpeg" data-lightbox="fotogalerie-1">
-                             <img src="images/content/1.jpeg" alt="" loading="lazy">
-                         </a>
-                         <a href="images/content/2.jpeg" data-lightbox="fotogalerie-1">
-                             <img src="images/content/2.jpeg" alt="" loading="lazy">
-                         </a>
-                     </div>
-                     <div class="fotogalerie_row-content">
-                         <div>
-                             <span>pondělí</span>
-                             <span>12.6.2021</span>
-                         </div>
-                         <h2>
-                             <a href="#">Lorem Ipsum 2</a>
-                         </h2>
-                     </div>
-                 </div>
-                 <div class="fotogalerie_row">
-                     <div class="fotogalerie_row-img_container">
-                         <a href="images/content/1.jpeg" data-lightbox="fotogalerie-1">
-                             <img src="images/content/1.jpeg" alt="" loading="lazy">
-                         </a>
-                         <a href="images/content/2.jpeg" data-lightbox="fotogalerie-1">
-                             <img src="images/content/2.jpeg" alt="" loading="lazy">
-                         </a>
-                         <a href="images/content/1.jpeg" data-lightbox="fotogalerie-1">
-                             <img src="images/content/1.jpeg" alt="" loading="lazy">
-                         </a>
-                         <a href="images/content/2.jpeg" data-lightbox="fotogalerie-1">
-                             <img src="images/content/2.jpeg" alt="" loading="lazy">
-                         </a>
-                     </div>
-                     <div class="fotogalerie_row-content">
-                         <div>
-                             <span>pondělí</span>
-                             <span>12.6.2021</span>
-                         </div>
-                         <h2>
-                             <a href="#">Lorem Ipsum 2</a>
-                         </h2>
-                     </div>
-                 </div>
-                 <div class="fotogalerie_row">
-                     <div class="fotogalerie_row-img_container">
-                         <a href="images/content/1.jpeg" data-lightbox="fotogalerie-1">
-                             <img src="images/content/1.jpeg" alt="" loading="lazy">
-                         </a>
-                         <a href="images/content/2.jpeg" data-lightbox="fotogalerie-1">
-                             <img src="images/content/2.jpeg" alt="" loading="lazy">
-                         </a>
-                         <a href="images/content/1.jpeg" data-lightbox="fotogalerie-1">
-                             <img src="images/content/1.jpeg" alt="" loading="lazy">
-                         </a>
-                         <a href="images/content/2.jpeg" data-lightbox="fotogalerie-1">
-                             <img src="images/content/2.jpeg" alt="" loading="lazy">
-                         </a>
-                     </div>
-                     <div class="fotogalerie_row-content">
-                         <div>
-                             <span>pondělí</span>
-                             <span>12.6.2021</span>
-                         </div>
-                         <h2>
-                             <a href="#">Lorem Ipsum 2</a>
-                         </h2>
-                     </div>
-                 </div>
-                 <div class="fotogalerie_row">
-                     <div class="fotogalerie_row-img_container">
-                         <a href="images/content/1.jpeg" data-lightbox="fotogalerie-1">
-                             <img src="images/content/1.jpeg" alt="" loading="lazy">
-                         </a>
-                         <a href="images/content/2.jpeg" data-lightbox="fotogalerie-1">
-                             <img src="images/content/2.jpeg" alt="" loading="lazy">
-                         </a>
-                         <a href="images/content/1.jpeg" data-lightbox="fotogalerie-1">
-                             <img src="images/content/1.jpeg" alt="" loading="lazy">
-                         </a>
-                         <a href="images/content/2.jpeg" data-lightbox="fotogalerie-1">
-                             <img src="images/content/2.jpeg" alt="" loading="lazy">
-                         </a>
-                     </div>
-                     <div class="fotogalerie_row-content">
-                         <div>
-                             <span>pondělí</span>
-                             <span>12.6.2021</span>
-                         </div>
-                         <h2>
-                             <a href="#">Lorem Ipsum 2</a>
-                         </h2>
-                     </div>
-                 </div>
-                 <div class="fotogalerie_row">
-                     <div class="fotogalerie_row-img_container">
-                         <a href="images/content/1.jpeg" data-lightbox="fotogalerie-1">
-                             <img src="images/content/1.jpeg" alt="" loading="lazy">
-                         </a>
-                         <a href="images/content/2.jpeg" data-lightbox="fotogalerie-1">
-                             <img src="images/content/2.jpeg" alt="" loading="lazy">
-                         </a>
-                         <a href="images/content/1.jpeg" data-lightbox="fotogalerie-1">
-                             <img src="images/content/1.jpeg" alt="" loading="lazy">
-                         </a>
-                         <a href="images/content/2.jpeg" data-lightbox="fotogalerie-1">
-                             <img src="images/content/2.jpeg" alt="" loading="lazy">
-                         </a>
-                     </div>
-                     <div class="fotogalerie_row-content">
-                         <div>
-                             <span>pondělí</span>
-                             <span>12.6.2021</span>
-                         </div>
-                         <h2>
-                             <a href="#">Lorem Ipsum 2</a>
-                         </h2>
-                     </div>
-                 </div>
-                 <div class="fotogalerie-page_button_container">
-                     <button class="fotogalerie-page_button prev"><span>&#8592;</span>Novější</button>
-                     <button class="fotogalerie-page_button next">Starší<span>&#8594;</span></button>
+                </div>
+                <div class="fotogalerie-page_button_container">
+                     <a href="#" class="fotogalerie-page_button prev"><span>&#8592;</span>Novější</a>
+                     <a href="#" class="fotogalerie-page_button next">Starší<span>&#8594;</span></a>
                  </div>
              </div>
          </div>
