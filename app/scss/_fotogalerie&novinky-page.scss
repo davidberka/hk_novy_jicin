@@ -24,6 +24,7 @@
         display: flex;
         align-items: center;
         flex-wrap: wrap;
+        justify-content: flex-end;
 
         .jq-selectbox {
             margin-bottom: 0;
@@ -180,7 +181,12 @@
        h1 {
            margin-bottom: 1rem;
        }
+
+       .novinky_page_form form {
+           justify-content: flex-start;
+      }
    } 
+
 
    .fotogalerie_row_container, .novinky_row_container {
        width: 90%;
