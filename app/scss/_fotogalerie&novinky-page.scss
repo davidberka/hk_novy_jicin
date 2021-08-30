@@ -4,6 +4,12 @@
     }
 }
 
+.main__content.novinky_page, .main__content.fotogalerie_page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .fotogalerie_page_header, .novinky_page_header {
     display: flex;
     justify-content: space-between;
