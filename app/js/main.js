@@ -101,6 +101,19 @@ const counter = function () {
 
 counter();
 
+window.addEventListener('load', () => {
+  const paragraphs = document.querySelectorAll('.novinky_row-content p');
+
+  paragraphs.forEach(paragraph => {
+    if (paragraph.textContent.length > 200) {
+      const truncated = paragraph.textContent.substr(0, 200) + '...';
+      return paragraph.textContent = truncated;
+    } else {
+      return paragraph.textContent;
+    }
+  })
+})
+
 // const fotogaleriePagesHandler = function (btnClass, containerId) {
 //   let page = 1;
 
